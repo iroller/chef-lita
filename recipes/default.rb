@@ -72,7 +72,7 @@ template "#{node["lita"]["install_dir"]}/lita_config.rb" do
   notifies :restart, "service[lita]"
   helpers do
     def string_or_symbol(attrib)
-      if attrib =~ /^:/
+      if attrib =~ /^(:|\[)/
         attrib
       else
         "\"#{attrib}\""
