@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+<% node['lita']['sources'].each do |source| -%>
+source "<%= source %>"
+<% end -%>
 
 gem "lita"<% if node['lita']['version'] -%>, "<%= node['lita']['version'] %>"<% end -%>
 
