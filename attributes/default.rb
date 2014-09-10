@@ -53,6 +53,9 @@ default["lita"]["plugins"] = []
 # See above for example.
 default["lita"]["gems"] = []
 
+# Array of sources to be added to Gemfile
+default["lita"]["sources"] = ["https://rubygems.org"]
+
 # Configuration specific to plugin list above. Example:
 #
 # default["lita"]["plugin_config"] = {
