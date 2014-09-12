@@ -10,5 +10,5 @@ supports 'ubuntu'
 
 depends 'apt'
 depends 'build-essential'
-depends 'ruby-ng', '~> 0.1.1'
-depends 'redis2', '~> 0.5.0'
+#depends 'ruby-ng', '~> 0.1.1'
+#depends 'redis2', '~> 0.5.0'
