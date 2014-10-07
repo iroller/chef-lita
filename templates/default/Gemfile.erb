@@ -5,7 +5,7 @@ source "<%= source %>"
 gem "lita"<% if node['lita']['version'] -%>, "<%= node['lita']['version'] %>"<% end -%>
 
 <% if node['lita']['adapter'] != ":shell" -%>
-gem "lita-<%= stringify(node['lita']['adapter']) %>"<% if node['lita']['adapter_version'] -%>, "<%= node['lita']['adapter_version'] %>"<% end -%>
+gem "lita-<%= stringify(node['lita']['adapter']) %>"<% if node['lita']['adapter_version'] -%>, <%= node['lita']['adapter_version'] %><% end -%>
 <% end -%>
 
 <% node['lita']['plugins'].each do |plugin| -%>
